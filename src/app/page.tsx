@@ -257,9 +257,9 @@ export default function Home() {
                 <LocationOnOutlined className="mr-1" fontSize="small" />
                 <span>Ratnapura, Kudugalwaththa</span>
               </div>
-              <a href="tel:+947XXXXXXXX" className="flex items-center hover:text-indigo-200 transition">
+              <a href="tel:+94712501952" className="flex items-center hover:text-indigo-200 transition">
                 <PhoneOutlined className="mr-1" fontSize="small" />
-                <span>+94 7x xxx xxxx</span>
+                <span>+94 71 250 1952</span>
               </a>
             </div>
             <div className="flex items-center space-x-4">
@@ -719,7 +719,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <PhoneOutlined className="mr-2" />
-                  <a href="tel:+947XXXXXXXX" className="text-gray-400 hover:text-white transition">+94 7x xxx xxxx</a>
+                  <a href="tel:+94712501952" className="text-gray-400 hover:text-white transition">+94 71 250 1952</a>
                 </li>
                 <li>
                   <button className="mt-5 bg-indigo-700 hover:bg-indigo-800 text-white px-6 py-2 rounded-lg font-medium transition" onClick={sayHello}>
