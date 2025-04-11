@@ -323,7 +323,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="hero-section relative min-h-screen flex items-center justify-center bg-[url('https://wp.dreamitsolution.net/techpros-elementor//wp-content/uploads/2022/03/slider1.jpgsu')] bg-no-repeat bg-cover bg-center before:absolute before:inset-0 before:bg-black before:opacity-60">
+      <section className="hero-section relative min-h-screen flex items-center justify-center bg-[url('https://wp.dreamitsolution.net/techpros-elementor//wp-content/uploads/2022/03/slider1.jpg')] bg-no-repeat bg-cover bg-center before:absolute before:inset-0 before:bg-black before:opacity-60">
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
