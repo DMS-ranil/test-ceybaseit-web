@@ -272,55 +272,74 @@ export default function Home() {
           </div>
         </div>
 
-        <nav className="container mx-auto px-4 py-3 bg-white">
-          <div className="flex justify-between items-center">
-            <a href="#" className="flex items-center">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcoZsMBFkU9ArhUL_HlgeESChICNA1cZcIZg&s"
-                className="h-10 mr-3"
-                alt="Ceybase IT Logo"
-              />
-              <span className="text-2xl font-bold text-indigo-900">Ceybase IT</span>
-            </a>
+<nav className="bg-white shadow-sm">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between items-center h-16">
+      {/* Logo */}
+      <div className="flex-shrink-0 flex items-center">
+        <a href="#" className="flex items-center">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcoZsMBFkU9ArhUL_HlgeESChICNA1cZcIZg&s"
+            className="h-8 sm:h-10 mr-2 sm:mr-3"
+            alt="Ceybase IT Logo"
+          />
+          <span className="text-xl sm:text-2xl font-bold text-indigo-900 whitespace-nowrap">Ceybase IT</span>
+        </a>
+      </div>
 
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-indigo-900 font-medium hover:text-indigo-600 transition">Home</a>
-              <a href="#about" className="text-gray-700 hover:text-indigo-600 transition">Company</a>
-              <a href="#services" className="text-gray-700 hover:text-indigo-600 transition">IT Solutions</a>
-              <a href="#blog" className="text-gray-700 hover:text-indigo-600 transition">Blog</a>
-              <a href="#contact" className="text-gray-700 hover:text-indigo-600 transition">Contact</a>
-              <button className="bg-indigo-700 hover:bg-indigo-800 text-white px-6 py-2 rounded-lg font-medium transition" onClick={sayHello}>
-                Get Started
-              </button>
-            </div>
+      <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-8">
+        <a href="#" className="px-3 py-2 text-sm lg:text-base font-medium text-indigo-900 hover:text-indigo-600 transition-colors">Home</a>
+        <a href="#about" className="px-3 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-indigo-600 transition-colors">Company</a>
+        <a href="#services" className="px-3 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-indigo-600 transition-colors">IT Solutions</a>
+        <a href="#blog" className="px-3 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-indigo-600 transition-colors">Blog</a>
+        <a href="#contact" className="px-3 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-indigo-600 transition-colors">Contact</a>
+        <button 
+          className="ml-4 inline-flex items-center px-4 py-2 border border-transparent text-sm lg:text-base font-medium rounded-lg shadow-sm text-white bg-indigo-700 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
+          onClick={sayHello}
+        >
+          Get Started
+        </button>
+      </div>
 
-            <button
-              className="md:hidden text-gray-700 focus:outline-none"
-              onClick={toggleMenu}
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {isMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
-          </div>
-
-          {isMenuOpen && (
-            <div className="md:hidden bg-white py-4 px-2 shadow-lg rounded-lg mt-2">
-              <a href="#" className="block py-2 px-4 text-indigo-900 font-medium">Home</a>
-              <a href="#about" className="block py-2 px-4 text-gray-700 hover:text-indigo-600 transition">Company</a>
-              <a href="#services" className="block py-2 px-4 text-gray-700 hover:text-indigo-600 transition">IT Solutions</a>
-              <a href="#blog" className="block py-2 px-4 text-gray-700 hover:text-indigo-600 transition">Blog</a>
-              <a href="#contact" className="block py-2 px-4 text-gray-700 hover:text-indigo-600 transition">Contact</a>
-              <button className="w-full mt-2 bg-indigo-700 hover:bg-indigo-800 text-white px-6 py-2 rounded-lg font-medium transition" onClick={sayHello}>
-                Get Started
-              </button>
-            </div>
+      <div className="md:hidden flex items-center">
+        <button
+          onClick={toggleMenu}
+          className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-indigo-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+          aria-expanded="false"
+        >
+          <span className="sr-only">Open main menu</span>
+          {isMenuOpen ? (
+            <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
           )}
-        </nav>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  {isMenuOpen && (
+    <div className="md:hidden bg-white shadow-md">
+      <div className="pt-2 pb-3 space-y-1 px-2">
+        <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-indigo-900 bg-indigo-50">Home</a>
+        <a href="#about" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Company</a>
+        <a href="#services" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">IT Solutions</a>
+        <a href="#blog" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Blog</a>
+        <a href="#contact" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Contact</a>
+        <button 
+          className="w-full flex justify-center mt-2 px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-700 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          onClick={sayHello}
+        >
+          Get Started
+        </button>
+      </div>
+    </div>
+  )}
+</nav>
       </header>
 
       <section className="hero-section relative min-h-screen flex items-center justify-center bg-[url('https://wp.dreamitsolution.net/techpros-elementor//wp-content/uploads/2022/03/slider1.jpg')] bg-no-repeat bg-cover bg-center before:absolute before:inset-0 before:bg-black before:opacity-60">
