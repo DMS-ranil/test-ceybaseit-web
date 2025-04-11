@@ -274,7 +274,7 @@ export default function Home() {
 
         <nav className="container mx-auto px-4 py-3 bg-white">
           <div className="flex justify-between items-center">
-            <a href="/" className="flex items-center">
+            <a href="#" className="flex items-center">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcoZsMBFkU9ArhUL_HlgeESChICNA1cZcIZg&s"
                 className="h-10 mr-3"
