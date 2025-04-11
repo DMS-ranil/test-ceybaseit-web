@@ -33,37 +33,37 @@ export default function Home() {
 
   const sayHello = async () => {
     const MySwal = withReactContent(Swal);
-
-    const { value: formValues } = await Swal.fire({
+  
+    const result = await MySwal.fire({
       title: 'Get Started With Us',
       html:
         '<div class="flex flex-col gap-4 px-[2px] py-2 w-full max-w-md mx-auto">' +
-          '<input id="swal-input1" class="swal2-input w-full px-5 py-4 text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name"/>' +
-          '<input id="swal-input2" class="swal2-input w-full px-5 py-4 text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Email" />' +
-          '<textarea id="swal-input3" class="swal2-textarea w-full h-24 px-5 py-4 text-base border border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Message"></textarea>' +
+        '<input id="swal-input1" class="swal2-input" placeholder="Your Name"/>' +
+        '<input id="swal-input2" class="swal2-input" placeholder="Your Email"/>' +
+        '<textarea id="swal-input3" class="swal2-textarea" placeholder="Your Message"></textarea>' +
         '</div>',
-
       focusConfirm: false,
       showCancelButton: true,
       preConfirm: () => {
-        const name = document.getElementById('swal-input1')?.value;
-        const email = document.getElementById('swal-input2')?.value;
-        const message = document.getElementById('swal-input3')?.value;
-
+        const name = (document.getElementById('swal-input1') as HTMLInputElement)?.value.trim();
+        const email = (document.getElementById('swal-input2') as HTMLInputElement)?.value.trim();
+        const message = (document.getElementById('swal-input3') as HTMLTextAreaElement)?.value.trim();
+  
         if (!name || !email || !message) {
           Swal.showValidationMessage('Please fill in all fields');
-          return;
+          return false;
         }
-
+  
         return { name, email, message };
       }
     });
-
-
-    if (formValues) {
+  
+    if (result.isConfirmed && result.value) {
+      const formValues = result.value;
+  
       console.log('Collected Data:', formValues);
-
-      //Admin
+  
+      // Send email to Admin
       emailjs.send(
         'service_8ebvqoi',
         'template_bv4p1cu',
@@ -73,9 +73,9 @@ export default function Home() {
           message: formValues.message,
         },
         'PJeFZIhQTSZiaOXv5'
-      )
-
-      //CLient
+      );
+  
+      // Send email to Client
       emailjs.send(
         'service_217kgr7',
         'template_cqjoe6f',
@@ -85,17 +85,15 @@ export default function Home() {
           message: formValues.message,
         },
         'PJeFZIhQTSZiaOXv5'
-      )
-
-        .then(() => {
-          Swal.fire('Success', 'Email sent successfully!', 'success');
-        })
-        .catch((err) => {
-          console.error('EmailJS Error:', err);
-          Swal.fire('Error', 'Failed to send email. Try again later.', 'error');
-        });
+      ).then(() => {
+        Swal.fire('Success', 'Email sent successfully!', 'success');
+      }).catch((err) => {
+        console.error('EmailJS Error:', err);
+        Swal.fire('Error', 'Failed to send email. Try again later.', 'error');
+      });
     }
   };
+  
 
 
   useEffect(() => {
