@@ -8,6 +8,7 @@ import {
   DevicesOther, QueryStatsOutlined, AccountTreeOutlined, SecurityOutlined, WebOutlined,
   ImportantDevicesOutlined, AodOutlined
 } from '@mui/icons-material';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from "framer-motion";
@@ -267,7 +268,7 @@ export default function Home() {
               <a href="#" className="hover:text-indigo-200 transition"><Facebook fontSize="small" /></a>
               <a href="#" className="hover:text-indigo-200 transition"><Instagram fontSize="small" /></a>
               <a href="#" className="hover:text-indigo-200 transition"><Pinterest fontSize="small" /></a>
-              <a href="#" className="hover:text-indigo-200 transition"><Language fontSize="small" /></a>
+              <a href="#" className="hover:text-indigo-200 transition"><LinkedInIcon fontSize="small" /></a>
             </div>
           </div>
         </div>
@@ -699,6 +700,9 @@ export default function Home() {
                 </a>
                 <a href="#" className="text-gray-400 hover:text-white transition">
                   <Pinterest />
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition">
+                  <LinkedInIcon />
                 </a>
               </div>
             </div>
