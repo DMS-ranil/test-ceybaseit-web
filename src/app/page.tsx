@@ -9,6 +9,7 @@ import {
   ImportantDevicesOutlined, AodOutlined
 } from '@mui/icons-material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from "framer-motion";
@@ -18,18 +19,39 @@ import withReactContent from 'sweetalert2-react-content';
 import ReactDOM from 'react-dom/client';
 import emailjs from 'emailjs-com';
 
+
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeService, setActiveService] = useState('security');
   const [activeTestimonial, setActiveTestimonial] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
   const [randomNumber, setRandomNumber] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const number = Math.floor(Math.random() * (95 - 20 + 1)) + 30;
     setRandomNumber(number);
   }, []);
 
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
 
 
   const sayHello = async () => {
@@ -370,6 +392,19 @@ export default function Home() {
 
 
       </section>
+
+
+      <button
+      onClick={scrollToTop}
+      className={`fixed bottom-5 right-5 z-50 p-3 w-15 h-15 rounded-full bg-blue-600 text-white shadow-md hover:bg-purple-700 cursor-pointer transition-opacity duration-300 ${
+        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+      }`}
+      aria-label="Go to top"
+    >
+      <ArrowUpwardIcon/>
+    </button>
+
+
 
       <div className="hidden lg:visible md:block sm:block relative bottom-0 left-0 right-0 transform translate-y-1/2">
         <div className="container mx-auto px-4">
