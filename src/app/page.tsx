@@ -675,7 +675,7 @@ export default function Home() {
             <p className="text-xl text-indigo-200 mb-8">
               Contact us today to discuss how we can help you achieve your business goals through innovative IT solutions.
             </p>
-            <button className="bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-4 rounded-lg font-bold text-lg transition transform hover:-translate-y-1">
+            <button className="bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-4 rounded-lg font-bold text-lg transition transform hover:-translate-y-1" onClick={sayHello}>
               Get Started Now <KeyboardArrowRight className="ml-2" />
             </button>
           </div>
