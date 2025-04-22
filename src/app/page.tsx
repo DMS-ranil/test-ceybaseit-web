@@ -298,7 +298,6 @@ export default function Home() {
 <nav className="bg-white shadow-sm">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex justify-between items-center h-16">
-      {/* Logo */}
       <div className="flex-shrink-0 flex items-center">
         <a href="#" className="flex items-center">
           <img
@@ -310,7 +309,7 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-8">
+      <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">
         <a href="#" className="px-3 py-2 text-sm lg:text-base font-medium text-indigo-900 hover:text-indigo-600 transition-colors">Home</a>
         <a href="#about" className="px-3 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-indigo-600 transition-colors">Company</a>
         <a href="#services" className="px-3 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-indigo-600 transition-colors">IT Solutions</a>
@@ -394,15 +393,9 @@ export default function Home() {
       </section>
 
 
-      <button
-      onClick={scrollToTop}
-      className={`fixed bottom-5 right-5 z-50 p-3 w-15 h-15 rounded-full bg-blue-600 text-white shadow-md hover:bg-purple-700 cursor-pointer transition-opacity duration-300 ${
-        isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
-      }`}
-      aria-label="Go to top"
-    >
-      <ArrowUpwardIcon/>
-    </button>
+      <button onClick={scrollToTop} className={`fixed bottom-5 right-5 z-50 p-3 w-15 h-15 rounded-full bg-blue-600 text-white shadow-md hover:bg-purple-700 cursor-pointer transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} aria-label="Go to top" >
+        <ArrowUpwardIcon/>
+      </button>
 
 
 
