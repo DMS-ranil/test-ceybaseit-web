@@ -18,6 +18,7 @@ import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 import ReactDOM from 'react-dom/client';
 import emailjs from 'emailjs-com';
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -380,10 +381,15 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
               <button className="bg-indigo-700 hover:bg-indigo-800 text-white px-8 py-4 rounded-lg font-medium text-lg flex items-center transition transform hover:-translate-y-1">
-                How It Works <KeyboardArrowRight className="ml-2" />
+                <a href="#howitworks">
+                  How It Works <KeyboardArrowRight className="ml-2" />
+                </a>
               </button>
               <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-indigo-900 px-8 py-4 rounded-lg font-medium text-lg flex items-center transition transform hover:-translate-y-1">
-                Our Services <KeyboardArrowRight className="ml-2" />
+                <a href="#services">
+                  Our Services <KeyboardArrowRight className="ml-2" />
+                </a>
+
               </button>
             </div>
           </motion.div>
@@ -392,6 +398,7 @@ export default function Home() {
 
       </section>
 
+      
 
       <button onClick={scrollToTop} className={`fixed bottom-5 right-5 z-50 p-3 w-15 h-15 rounded-full bg-blue-600 text-white shadow-md hover:bg-purple-700 cursor-pointer transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} aria-label="Go to top" >
         <ArrowUpwardIcon/>
@@ -624,7 +631,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section id="howitworks" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16" data-aos="fade-up">
             <span className="text-indigo-600 font-bold tracking-wider">OUR PROCESS</span>
