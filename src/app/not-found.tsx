@@ -1,6 +1,8 @@
 "use client";
 import Link from 'next/link';
 
+
+
 export default function NotFound() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-50 via-purple-50 to-blue-50 p-4">
@@ -31,7 +33,7 @@ export default function NotFound() {
         
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
-            href="/"
+            href="/#"
             className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
           >
             Go Back Home
@@ -47,8 +49,12 @@ export default function NotFound() {
       </div>
       
       <p className="mt-8 text-gray-500 text-sm">
-        Need help? <Link href="/contact" className="text-indigo-600 hover:underline">Contact support</Link>
+        Need help? <Link href="/contact#" className="text-indigo-600 hover:underline">Contact support</Link>
       </p>
+
+      <div className="border-t border-gray-800 pt-5 text-center text-gray-400 mt-24">
+            <p>&copy; {new Date().getFullYear()} Ceybase IT (Pvt) Ltd. All rights reserved.</p>
+      </div>
     </div>
   );
 }
