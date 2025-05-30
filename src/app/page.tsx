@@ -266,7 +266,7 @@ export default function Home() {
       <Head>
         <title>Ceybase IT - Innovative Technology Solutions</title>
         <meta name="description" content="Ceybase IT provides cutting-edge IT solutions including web development, mobile apps, cybersecurity, and IT consultancy services." />
-        <link rel="icon" href="/icon1.png" />
+        <link rel="icon" href="/image-removebg-preview.png" />
       </Head>
 
       <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black shadow-md' : 'bg-transparent'}`}>
@@ -302,7 +302,7 @@ export default function Home() {
       <div className="flex-shrink-0 flex items-center">
         <a href="#" className="flex items-center">
           <img
-            src="/icon1.png"
+            src="/image-removebg-preview.png"
             className="h-8 sm:h-10 mr-2 sm:mr-3"
             alt="Ceybase IT Logo"
           />
