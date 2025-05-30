@@ -489,7 +489,19 @@ export default function Home() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Our Mission</h3>
                     <p className="text-gray-600">
-                      To empower businesses through innovative technology solutions that drive growth, efficiency, and competitive advantage in the digital era.
+                      Our mission is to deliver high quality,reliable  and scalable software products by combining creativity ,technology and customer focused design.We aim to support client with smart digital solutions ,nurture local talent and grow through continuous learning and collaboration
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start mb-4">
+                  <div className="text-indigo-600 mr-4 mt-1">
+                    <CampaignOutlined fontSize="medium" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">Our Vision</h3>
+                    <p className="text-gray-600">
+                      To be a leading force in innovative ,user friendly and impactful software solution that improve lives and empower businesses globally
                     </p>
                   </div>
                 </div>
