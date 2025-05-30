@@ -6,7 +6,7 @@ import {
   MailOutlined, LocationOnOutlined, PhoneOutlined, Facebook, Instagram, Pinterest, Language,
   KeyboardArrowRight, ContactSupportOutlined, MemoryOutlined, AccessTime, CampaignOutlined,
   DevicesOther, QueryStatsOutlined, AccountTreeOutlined, SecurityOutlined, WebOutlined,
-  ImportantDevicesOutlined, AodOutline
+  ImportantDevicesOutlined, AodOutlined
 } from '@mui/icons-material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
