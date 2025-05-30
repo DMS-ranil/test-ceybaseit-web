@@ -6,7 +6,7 @@ import {
   MailOutlined, LocationOnOutlined, PhoneOutlined, Facebook, Instagram, Pinterest, Language,
   KeyboardArrowRight, ContactSupportOutlined, MemoryOutlined, AccessTime, CampaignOutlined,
   DevicesOther, QueryStatsOutlined, AccountTreeOutlined, SecurityOutlined, WebOutlined,
-  ImportantDevicesOutlined, AodOutlined
+  ImportantDevicesOutlined, AodOutlined, VisibilityIcon
 } from '@mui/icons-material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
@@ -496,7 +496,7 @@ export default function Home() {
                 
                 <div className="flex items-start mb-4">
                   <div className="text-indigo-600 mr-4 mt-1">
-                    <CampaignOutlined fontSize="medium" />
+                    <VisibilityIcon fontSize="medium" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Our Vision</h3>
