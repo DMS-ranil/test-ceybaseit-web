@@ -10,6 +10,8 @@ import {
 } from '@mui/icons-material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import CodeIcon from '@mui/icons-material/Code';
+import WebIcon from '@mui/icons-material/Web';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from "framer-motion";
@@ -429,11 +431,11 @@ export default function Home() {
               data-aos="fade-up"
             >
               <div className="text-white mb-4">
-                <MemoryOutlined fontSize="large" />
+                <CodeIcon fontSize="large" />
               </div>
-              <h3 className="text-2xl font-bold mb-3">Cyber Security</h3>
+              <h3 className="text-2xl font-bold mb-3">Desktop , Web & Mobile Application Development</h3>
               <p className="text-indigo-100">
-                Comprehensive security solutions to protect your business from evolving cyber threats and vulnerabilities.
+                We build scalable desktop, web and mobile apps, delivering smart, reliable solutions to help businesses grow and succeed in the digital world.
               </p>
             </motion.div>
 
@@ -443,11 +445,11 @@ export default function Home() {
               data-aos="fade-down"
             >
               <div className="text-indigo-600 mb-4">
-                <AccessTime fontSize="large" />
+                <WebIcon fontSize="large" />
               </div>
-              <h3 className="text-2xl font-bold mb-3">24/7 Support</h3>
+              <h3 className="text-2xl font-bold mb-3">Website Development</h3>
               <p className="text-gray-600">
-                Round-the-clock technical support to ensure your systems are always up and running smoothly.
+                We develop user-friendly websites tailored to your needs that take your brand to the next generation, engage visitors, and deliver powerful results for your business growth.
               </p>
             </motion.div>
           </div>
