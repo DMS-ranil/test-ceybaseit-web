@@ -306,7 +306,7 @@ export default function Home() {
             className="h-8 sm:h-10 mr-2 sm:mr-3"
             alt="Ceybase IT Logo"
           />
-          <span className="text-xl sm:text-2xl font-bold text-indigo-900 whitespace-nowrap">Ceybase IT</span>
+          <span className="text-xl sm:text-2xl font-bold text-indigo-900 whitespace-nowrap"></span>
         </a>
       </div>
 
