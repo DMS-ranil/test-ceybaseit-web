@@ -477,10 +477,10 @@ export default function Home() {
             <div className="md:w-1/2 md:pl-12" data-aos="fade-right">
               <span className="text-indigo-600 font-bold tracking-wider">ABOUT US</span>
               <h2 className="text-4xl font-bold mt-2 mb-6">
-                We Are <span className="text-indigo-700">Ceybase IT</span>, Established Since 2025
+                We Are <span className="text-indigo-700">Ceybase IT</span>, Since {new Date().getFullYear()}
               </h2>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Founded in 2025, Ceybase IT has been at the forefront of delivering innovative technology solutions to businesses across various industries. Our team of experts combines technical expertise with business acumen to deliver solutions that drive growth and efficiency.
+                 In {new Date().getFullYear()}, Ceybase IT has been at the forefront of delivering innovative technology solutions to businesses across various industries. Our team of experts combines technical expertise with business acumen to deliver solutions that drive growth and efficiency.
               </p>
 
               <div className="mb-8">
