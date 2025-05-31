@@ -468,7 +468,7 @@ export default function Home() {
                   className="rounded-lg shadow-xl w-full max-w-lg"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-indigo-700 w-32 h-32 rounded-lg flex items-center justify-center text-white text-4xl font-bold ">
-                  {randomNumber} +
+                  60 +
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-indigo-700 w-32 h-32 rounded-lg opacity-20 animate-ping"></div>
               </div>
