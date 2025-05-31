@@ -421,7 +421,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold mb-3">IT Consultancy</h3>
               <p className="text-gray-600">
-                Expert advice and strategic planning to optimize your IT infrastructure and digital transformation journey.
+                Expert advice and strategic planning to optimize your IT infrastructure and digital transformation journey, driving innovation, scalability, cybersecurity, cost-efficiency, and long-term business growth.
               </p>
             </motion.div>
 
