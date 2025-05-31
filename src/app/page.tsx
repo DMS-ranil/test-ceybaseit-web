@@ -28,6 +28,19 @@ export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [randomNumber, setRandomNumber] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640); 
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const number = Math.floor(Math.random() * (95 - 20 + 1)) + 30;
@@ -299,16 +312,24 @@ export default function Home() {
 <nav className="bg-white shadow-sm">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8">
     <div className="flex justify-between items-center h-16">
-      <div className="flex-shrink-0 flex items-center">
-        <a href="#" className="flex items-center">
-          <img
-            src="https://dms-ranil.github.io/test-ceybaseit-web/image-removebg-preview.png"
-            className="h-8 sm:h-10 mr-2 sm:mr-3"
-            alt="Ceybase IT Logo"
-          />
-          <span className="text-xl sm:text-2xl font-bold text-indigo-900 whitespace-nowrap">Ceybase IT</span>
-        </a>
-      </div>
+     <div className="flex-shrink-0 flex items-center">
+      <a 
+        href="https://dms-ranil.github.io/test-ceybaseit-web/#" 
+        className="flex items-center hover:opacity-80 transition-opacity duration-200"
+      >
+        <img
+          src="https://dms-ranil.github.io/test-ceybaseit-web/image-removebg-preview.png"
+          className={`${isMobile ? 'h-7 mr-1.5' : 'h-10 mr-3'}`}
+          alt="Ceybase IT Logo"
+          loading="lazy" // Better performance
+        />
+        <span className={`font-bold text-indigo-900 whitespace-nowrap ${
+          isMobile ? 'text-lg' : 'text-2xl'
+        }`}>
+          Ceybase IT
+        </span>
+      </a>
+    </div>
 
       <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">
         <a href="#" className="px-3 py-2 text-sm lg:text-base font-medium text-indigo-900 hover:text-indigo-600 transition-colors">Home</a>
