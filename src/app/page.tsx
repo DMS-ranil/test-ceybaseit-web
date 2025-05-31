@@ -275,9 +275,9 @@ export default function Home() {
         <div className="top-bar bg-indigo-800 text-white py-2 px-4 text-sm hidden md:block">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex items-center space-x-6">
-              <a href="mailto:CeybaseIt@gmail.com" className="flex items-center hover:text-indigo-200 transition">
+              <a href="mailto:ceybaseit@gmail.com" className="flex items-center hover:text-indigo-200 transition">
                 <MailOutlined className="mr-1" fontSize="small" />
-                <span>CeybaseIt@gmail.com</span>
+                <span>ceybaseit@gmail.com</span>
               </a>
               <div className="flex items-center">
                 <LocationOnOutlined className="mr-1" fontSize="small" />
