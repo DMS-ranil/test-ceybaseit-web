@@ -751,10 +751,10 @@ export default function Home() {
                   <Facebook />
                 </a>
                 <a href="#" className="text-gray-400 hover:text-white transition">
-                  <Instagram />
+                  <YouTubeIcon />
                 </a>
                 <a href="#" className="text-gray-400 hover:text-white transition">
-                  <Pinterest />
+                  <GitHubIcon />
                 </a>
                 <a href="#" className="text-gray-400 hover:text-white transition">
                   <LinkedInIcon />
