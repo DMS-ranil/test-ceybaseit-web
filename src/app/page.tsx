@@ -516,7 +516,7 @@ export default function Home() {
               </div>
 
               <button className="bg-indigo-700 hover:bg-indigo-800 text-white px-8 py-3 rounded-lg font-medium transition flex items-center">
-                Learn More <KeyboardArrowRight className="ml-2" />
+                <a href="#howitworks">Learn More <KeyboardArrowRight className="ml-2" /></a>
               </button>
             </div>
           </div>
