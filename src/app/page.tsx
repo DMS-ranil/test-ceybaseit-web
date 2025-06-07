@@ -408,7 +408,7 @@ export default function Home() {
 
 
 
-      <div className="hidden lg:visible md:block sm:block relative bottom-0 left-0 right-0 transform translate-y-1/2 bg-indigo-50">
+      <div className="hidden lg:visible md:block sm:block relative bottom-0 left-0 right-0 transform translate-y-1/2 ">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <motion.div
