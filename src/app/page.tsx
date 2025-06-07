@@ -292,7 +292,7 @@ export default function Home() {
         <div className="top-bar bg-indigo-800 text-white py-2 px-4 text-sm hidden md:block">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex items-center space-x-6">
-              <a href="mailto:ceybaseit@gmail.com" className="flex items-center hover:text-indigo-200 transition">
+              <a href="mailto:ceybaseit@gmail.com" target="_blank" className="flex items-center hover:text-indigo-200 transition">
                 <MailOutlined className="mr-1" fontSize="small" />
                 <span>ceybaseit@gmail.com</span>
               </a>
@@ -300,17 +300,17 @@ export default function Home() {
                 <LocationOnOutlined className="mr-1" fontSize="small" />
                 <span>Ratnapura, Kudugalwaththa</span>
               </div>
-              <a href="tel:+94712501952" className="flex items-center hover:text-indigo-200 transition">
+              <a href="tel:+94712501952" target="_blank" className="flex items-center hover:text-indigo-200 transition">
                 <PhoneOutlined className="mr-1" fontSize="small" />
                 <span>+94 71 250 1952</span>
               </a>
             </div>
             <div className="flex items-center space-x-4">
               <span>Follow Us:</span>
-              <a href="https://www.facebook.com/share/18avwwuu7P/" className="hover:text-indigo-200 transition"><Facebook fontSize="small" /></a>
-              <a href="#" className="hover:text-indigo-200 transition"><YouTubeIcon fontSize="small" /></a>
-              <a href="#" className="hover:text-indigo-200 transition"><GitHubIcon fontSize="small" /></a>
-              <a href="#" className="hover:text-indigo-200 transition"><LinkedInIcon fontSize="small" /></a>
+              <a href="https://www.facebook.com/share/18avwwuu7P/" target="_blank" className="hover:text-indigo-200 transition"><Facebook fontSize="small" /></a>
+              <a href="#" target="_blank" className="hover:text-indigo-200 transition"><YouTubeIcon fontSize="small" /></a>
+              <a href="#" target="_blank" className="hover:text-indigo-200 transition"><GitHubIcon fontSize="small" /></a>
+              <a href="#" target="_blank" className="hover:text-indigo-200 transition"><LinkedInIcon fontSize="small" /></a>
             </div>
           </div>
         </div>
@@ -762,16 +762,16 @@ export default function Home() {
                 We are a leading IT solutions provider dedicated to helping businesses leverage technology for growth and success.
               </p>
               <div className="flex space-x-4">
-                <a href="https://www.facebook.com/share/18avwwuu7P/" className="text-gray-400 hover:text-white transition">
+                <a href="https://www.facebook.com/share/18avwwuu7P/" target="_blank" className="text-gray-400 hover:text-white transition">
                   <Facebook />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition">
+                <a href="#" target="_blank" className="text-gray-400 hover:text-white transition">
                   <YouTubeIcon />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition">
+                <a href="#" target="_blank" className="text-gray-400 hover:text-white transition">
                   <GitHubIcon />
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition">
+                <a href="#" target="_blank" className="text-gray-400 hover:text-white transition">
                   <LinkedInIcon />
                 </a>
               </div>
@@ -809,11 +809,11 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <MailOutlined className="mr-2" />
-                  <a href="mailto:CeybaseIt@gmail.com" className="text-gray-400 hover:text-white transition">ceybaseit@gmail.com</a>
+                  <a href="mailto:CeybaseIt@gmail.com" target="_blank" className="text-gray-400 hover:text-white transition">ceybaseit@gmail.com</a>
                 </li>
                 <li className="flex items-center">
                   <PhoneOutlined className="mr-2" />
-                  <a href="tel:+94712501952" className="text-gray-400 hover:text-white transition">+94 71 250 1952</a>
+                  <a href="tel:+94712501952" target="_blank" className="text-gray-400 hover:text-white transition">+94 71 250 1952</a>
                 </li>
                 <li>
                   <button className="mt-5 bg-indigo-700 hover:bg-indigo-800 text-white px-6 py-2 rounded-lg font-medium transition" onClick={sayHello}>
