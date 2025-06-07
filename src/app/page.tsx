@@ -608,7 +608,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 bg-gray-50" hidden>
+      <section className="py-20 bg-indigo-50" hidden>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16" data-aos="fade-up">
             <span className="text-indigo-600 font-bold tracking-wider">CASE STUDIES</span>
