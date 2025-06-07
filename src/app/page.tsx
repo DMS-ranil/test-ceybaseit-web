@@ -180,7 +180,7 @@ export default function Home() {
       id: 'consultancy',
       title: 'IT Consultancy',
       icon: <ImportantDevicesOutlined fontSize="large" />,
-      description: 'Expert advice and strategic planning to optimize your IT infrastructure and digital transformation'
+      description: 'Receive expert IT consultancy to strategically optimize your technology infrastructure, drive digital transformation, and achieve your business goals.'
     }
   ];
 
