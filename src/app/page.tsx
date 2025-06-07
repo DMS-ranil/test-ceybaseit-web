@@ -13,7 +13,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import CodeIcon from '@mui/icons-material/Code';
+import DevicesIcon from '@mui/icons-material/Devices';
 import WebIcon from '@mui/icons-material/Web';
+import TabIcon from '@mui/icons-material/Tab';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from "framer-motion";
@@ -144,28 +146,34 @@ export default function Home() {
 
   const services = [
     {
-      id: 'security',
-      title: 'Cyber Security',
-      icon: <SecurityOutlined fontSize="large" />,
-      description: 'Comprehensive security solutions to protect your business from cyber threats and vulnerabilities.'
+      id: 'desktop',
+      title: 'Desktop Application Development',
+      icon: <DevicesIcon fontSize="large" />,
+      description: 'Craft powerful and intuitive desktop applications tailored to your specific business needs, enhancing productivity and streamlining operations.'
     },
     {
-      id: 'web',
-      title: 'Web Development',
-      icon: <WebOutlined fontSize="large" />,
-      description: 'Custom web applications and websites built with modern technologies for optimal performance.'
+      id: 'webapp',
+      title: 'Web Application Development',
+      icon: <TabIcon fontSize="large" />,
+      description: 'Build robust and scalable web applications with cutting-edge technologies, delivering exceptional performance and user experiences.'
     },
     {
       id: 'mobile',
-      title: 'Mobile Development',
+      title: 'Mobile Application Development',
       icon: <AodOutlined fontSize="large" />,
-      description: 'Native and cross-platform mobile apps for iOS and Android to reach your customers anywhere.'
+      description: 'Develop engaging native and cross-platform mobile apps for iOS and Android, ensuring you connect with your audience on any device.'
+    },
+    {
+      id: 'webs',
+      title: 'Web Sites Development',
+      icon: <WebOutlined fontSize="large" />,
+      description: 'Design and develop stunning, responsive websites that capture your brand identity and provide an optimal user experience across all devices.'
     },
     {
       id: 'consultancy',
       title: 'IT Consultancy',
       icon: <ImportantDevicesOutlined fontSize="large" />,
-      description: 'Expert advice and strategic planning to optimize your IT infrastructure and digital transformation.'
+      description: 'Expert advice and strategic planning to optimize your IT infrastructure and digital transformation'
     }
   ];
 
@@ -537,7 +545,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
             {services.map((service, index) => (
               <motion.div
                 key={service.id}
