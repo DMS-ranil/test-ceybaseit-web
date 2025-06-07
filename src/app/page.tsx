@@ -307,7 +307,7 @@ export default function Home() {
             </div>
             <div className="flex items-center space-x-4">
               <span>Follow Us:</span>
-              <a href="#" className="hover:text-indigo-200 transition"><Facebook fontSize="small" /></a>
+              <a href="https://www.facebook.com/share/18avwwuu7P/" className="hover:text-indigo-200 transition"><Facebook fontSize="small" /></a>
               <a href="#" className="hover:text-indigo-200 transition"><YouTubeIcon fontSize="small" /></a>
               <a href="#" className="hover:text-indigo-200 transition"><GitHubIcon fontSize="small" /></a>
               <a href="#" className="hover:text-indigo-200 transition"><LinkedInIcon fontSize="small" /></a>
@@ -762,7 +762,7 @@ export default function Home() {
                 We are a leading IT solutions provider dedicated to helping businesses leverage technology for growth and success.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white transition">
+                <a href="https://www.facebook.com/share/18avwwuu7P/" className="text-gray-400 hover:text-white transition">
                   <Facebook />
                 </a>
                 <a href="#" className="text-gray-400 hover:text-white transition">
