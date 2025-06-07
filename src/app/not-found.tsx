@@ -49,7 +49,7 @@ export default function NotFound() {
       </div>
       
       <p className="mt-8 text-gray-500 text-sm">
-        Need help? <Link href="/contact#" className="text-indigo-600 hover:underline">Contact support</Link>
+        Need help? <Link href="tel:+94712501952" className="text-indigo-600 hover:underline">Contact support</Link>
       </p>
 
       <div className="border-t border-gray-800 pt-5 text-center text-gray-400 mt-24">
