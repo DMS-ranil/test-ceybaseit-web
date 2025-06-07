@@ -666,7 +666,7 @@ export default function Home() {
               <motion.div
                 key={step.step}
                 whileHover={{ scale: 1.05 }}
-                className="bg-indigo-50 rounded-xl p-8 text-center"
+                className="bg-white rounded-xl p-8 text-center"
                 data-aos="fade-up"
               >
                 <div className="relative inline-block mb-6">
