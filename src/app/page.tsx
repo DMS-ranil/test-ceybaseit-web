@@ -9,7 +9,9 @@ import {
   ImportantDevicesOutlined, AodOutlined
 } from '@mui/icons-material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import CodeIcon from '@mui/icons-material/Code';
 import WebIcon from '@mui/icons-material/Web';
 import AOS from 'aos';
@@ -291,8 +293,8 @@ export default function Home() {
             <div className="flex items-center space-x-4">
               <span>Follow Us:</span>
               <a href="#" className="hover:text-indigo-200 transition"><Facebook fontSize="small" /></a>
-              <a href="#" className="hover:text-indigo-200 transition"><Instagram fontSize="small" /></a>
-              <a href="#" className="hover:text-indigo-200 transition"><Pinterest fontSize="small" /></a>
+              <a href="#" className="hover:text-indigo-200 transition"><YouTubeIcon fontSize="small" /></a>
+              <a href="#" className="hover:text-indigo-200 transition"><GitHubIcon fontSize="small" /></a>
               <a href="#" className="hover:text-indigo-200 transition"><LinkedInIcon fontSize="small" /></a>
             </div>
           </div>
