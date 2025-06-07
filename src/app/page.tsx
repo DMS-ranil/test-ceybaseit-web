@@ -791,11 +791,12 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-bold mb-4">Services</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white transition">Web Development</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">Mobile Development</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">Cyber Security</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Desktop Application Development</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Web Application Development</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Mobile Application Development</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Websites Development</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">API Development & Integration</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition">IT Consultancy</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition">Cloud Solutions</a></li>
               </ul>
             </div>
 
@@ -808,7 +809,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <MailOutlined className="mr-2" />
-                  <a href="mailto:CeybaseIt@gmail.com" className="text-gray-400 hover:text-white transition">CeybaseIt@gmail.com</a>
+                  <a href="mailto:CeybaseIt@gmail.com" className="text-gray-400 hover:text-white transition">ceybaseit@gmail.com</a>
                 </li>
                 <li className="flex items-center">
                   <PhoneOutlined className="mr-2" />
