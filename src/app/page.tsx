@@ -666,7 +666,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="howitworks" className="py-20 bg-indigo-50">
+      <section id="howitworks" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16" data-aos="fade-up">
             <span className="text-indigo-600 font-bold tracking-wider">OUR PROCESS</span>
@@ -683,7 +683,7 @@ export default function Home() {
               <motion.div
                 key={step.step}
                 whileHover={{ scale: 1.05 }}
-                className="bg-white rounded-xl p-8 text-center"
+                className="bg-indigo-50 rounded-xl p-8 text-center"
                 data-aos="fade-up"
               >
                 <div className="relative inline-block mb-6">
