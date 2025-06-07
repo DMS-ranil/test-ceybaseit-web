@@ -15,6 +15,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import CodeIcon from '@mui/icons-material/Code';
 import DevicesIcon from '@mui/icons-material/Devices';
 import WebIcon from '@mui/icons-material/Web';
+import RouteIcon from '@mui/icons-material/Route';
 import TabIcon from '@mui/icons-material/Tab';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -168,6 +169,12 @@ export default function Home() {
       title: 'Web Sites Development',
       icon: <WebOutlined fontSize="large" />,
       description: 'Design and develop stunning, responsive websites that capture your brand identity and provide an optimal user experience across all devices.'
+    },
+    {
+      id: 'api',
+      title: 'API Development & Integration',
+      icon: <RouteIcon fontSize="large" />,
+      description: 'Building Application Programming Interfaces (APIs) to allow different software systems to communicate and integrate seamlessly. This is crucial for connecting internal systems or third-party services.'
     },
     {
       id: 'consultancy',
