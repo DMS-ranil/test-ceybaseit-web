@@ -419,7 +419,7 @@ export default function Home() {
 
       
 
-      <button onClick={scrollToTop} className={`fixed bottom-5 right-5 z-50 p-3 w-15 h-15 rounded-full bg-blue-600 text-white shadow-md hover:bg-purple-700 cursor-pointer transition-opacity duration-300 ease-in-out${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} aria-label="Go to top" >
+      <button onClick={scrollToTop} className={`fixed bottom-5 right-5 z-50 p-3 w-15 h-15 rounded-full bg-blue-600 text-white shadow-md hover:bg-purple-700 cursor-pointer transition-opacity duration-300 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} aria-label="Go to top" >
         <ArrowUpwardIcon/>
       </button>
 
