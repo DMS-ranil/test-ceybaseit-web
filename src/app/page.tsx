@@ -310,7 +310,7 @@ export default function Home() {
               <a href="https://www.facebook.com/share/18avwwuu7P/" target="_blank" className="hover:text-indigo-200 transition"><Facebook fontSize="small" /></a>
               <a href="#" target="_blank" className="hover:text-indigo-200 transition"><YouTubeIcon fontSize="small" /></a>
               <a href="#" target="_blank" className="hover:text-indigo-200 transition"><GitHubIcon fontSize="small" /></a>
-              <a href="#" target="_blank" className="hover:text-indigo-200 transition"><LinkedInIcon fontSize="small" /></a>
+              <a href="https://www.linkedin.com/in/ceybaseit/" target="_blank" className="hover:text-indigo-200 transition"><LinkedInIcon fontSize="small" /></a>
             </div>
           </div>
         </div>
@@ -771,7 +771,7 @@ export default function Home() {
                 <a href="#" target="_blank" className="text-gray-400 hover:text-white transition">
                   <GitHubIcon />
                 </a>
-                <a href="#" target="_blank" className="text-gray-400 hover:text-white transition">
+                <a href="https://www.linkedin.com/in/ceybaseit/" target="_blank" className="text-gray-400 hover:text-white transition">
                   <LinkedInIcon />
                 </a>
               </div>
