@@ -329,7 +329,7 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">
+      <div className="hidden md:flex md:items-center md:space-x-3 lg:space-x-3">
         <a href="#" className="px-3 py-2 text-sm lg:text-base font-medium text-indigo-900 hover:text-indigo-600 transition-colors">Home</a>
         <a href="#about" className="px-3 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-indigo-600 transition-colors">Company</a>
         <a href="#services" className="px-3 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-indigo-600 transition-colors">IT Solutions</a>
